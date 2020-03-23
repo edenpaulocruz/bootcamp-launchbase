@@ -17,7 +17,7 @@ const usuarios = [
 
 function imprime() {
   for ( let i = 0; i < usuarios.length; i++ ) {
-    console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias[0]}, ${usuarios[i].tecnologias[1]}
+    console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias.join(', ')}
     `);
   }
 }
