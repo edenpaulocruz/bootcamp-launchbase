@@ -2,11 +2,15 @@
     <img alt="LaunchBase Bootcamp" src="../assets/launchbase-bootcamp-logo.png" width="400px" />
 </h1>
 
+<h2 align="center">
+  Módulo 1 - Introdução à Programação WEB
+</h2>
+
 <h3 align="center">
-  Desafio 1-1: Primeiros passos com JS
+  Primeiros passos com JS
 </h3>
 
-## Sobre o desafio
+#### Sobre o desafio
 
 Desafios para fortalecer alguns conceitos, entre eles:
 
@@ -14,7 +18,7 @@ Desafios para fortalecer alguns conceitos, entre eles:
 - **Condicionais**;
 - **Operadores**.
 
-### Cálculo de IMC
+##### [Cálculo de IMC](imc.js)
 
 Crie um programa para calcular o IMC e nível de obesidade de uma pessoa.
 
@@ -37,7 +41,7 @@ Baseado no valor obtido através desse cálculo exiba as seguintes mensagens:
 - `SE` o `IMC` maior ou igual a `30`: Carlos você está acima do peso;
 - `SE` o `IMC` menor que `29.9`: Carlos você não está acima do peso;
 
-### Cálculo de aposentadoria
+##### [Cálculo de aposentadoria](aposentadoria.js)
 
 Crie um programa para calcular a aposentadoria de uma pessoa.
 
@@ -75,3 +79,5 @@ if (condicao1) {
   // Condição 1 não passou
 }
 ```
+
+#### [Voltar](../README.md)
