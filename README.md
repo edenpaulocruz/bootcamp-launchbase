@@ -22,3 +22,4 @@ Esse repositório visa documentar os desafios realizados por mim durante o bootc
 ### Iniciando no Front-end
 
 - [Primeiro HTML](desafio-2-1/desafio-2-1.md)
+- [Página de descrição](desafio-2-2/desafio-2-2.md)
