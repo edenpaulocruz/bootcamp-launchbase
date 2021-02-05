@@ -8,7 +8,7 @@ O LaunchBase, ministrado pela [Rocketseat](https://rocketseat.com.br/), **é um 
 
 A [Rocketseat](https://rocketseat.com.br/) oferece através de uma plataforma inteligente e metodologia prática, além de comunidade, eventos, conteúdo e conexão com o mercado de trabalho, todas as ferramentas que você precisa para masterizar no menor tempo possível as tecnologias mais modernas de desenvolvimento web e mobile, e dessa forma avançar para o próximo nível como programador.
 
-Esse repositório visa documentar os desafios realizados por mim durante o bootcamp.
+Esse repositório visa documentar os desafios realizados durante o bootcamp.
 
 ## Desafios
 
@@ -23,3 +23,4 @@ Esse repositório visa documentar os desafios realizados por mim durante o bootc
 
 - [Primeiro HTML](desafio-2-1/desafio-2-1.md)
 - [Página de descrição](desafio-2-2/desafio-2-2.md)
+- [Página de posts e iframe](desafio-2-3/desafio-2-3.md)

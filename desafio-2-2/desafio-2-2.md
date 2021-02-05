@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafio 2-1: Página de descrição
+  Desafio 2-2: Página de descrição
 </h3>
 
 ## Sobre o desafio
