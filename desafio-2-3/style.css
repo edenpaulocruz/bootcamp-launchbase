@@ -97,9 +97,7 @@ a {
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  margin-top: 12rem;
   box-shadow: 0 5px 15px #8257e6;
   text-align: center;
   width: 100%;
@@ -187,8 +185,9 @@ a {
 }
 
 .modal--active {
-  opacity: .9;
+  opacity: 1;
   visibility: visible;
+  z-index: 10;
 }
 
 .modal--max {
@@ -222,4 +221,9 @@ a {
   height: 80%;
   margin: 7.5% auto;
   width: 95%;
+}
+
+.modal__container iframe {
+  height: 100%;
+  width: 100%;
 }
