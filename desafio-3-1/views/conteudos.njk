@@ -1,0 +1,64 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+
+<title>Rocketseat - Conteúdos</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block content %}    
+
+<div class="container">
+  <h1 class="content__title">Conteúdos</h1>
+  
+  <div class="cards">
+    <div class="card" id="como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal">
+      <img class="card__image"src="https://blog.rocketseat.com.br/content/images/2020/11/thumb-como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal.jpg" alt="Ilustração de jovem utilizando notebook">
+      <div class="card__description">
+        <h2 class="card__title">Como renomear vários arquivos de uma vez usando o terminal</h2>
+        <p class="card__text">por <strong>Thiago Marinho</strong><br> <span>2 min de leitura</span></p>
+      </div>
+    </div>
+    
+    <div class="card" id="ambiente-desenvolvimento-javascript">
+      <img class="card__image"src="https://blog.rocketseat.com.br/content/images/2018/12/ambiente-desenvolvimento-javascript.png" alt="Ícones do VSCode e terminal com o JS em segundo plano">
+      <div class="card__description">
+        <h2 class="card__title">Ambiente Javascript: Dicas, VSCode e terminal</h2>
+        <p class="card__text">por <strong>Diego Fernandes</strong><br> <span>4 min de leitura</span></p>
+      </div>
+    </div>
+
+    <div class="card" id="dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida">
+      <img class="card__image"src="https://blog.rocketseat.com.br/content/images/2020/10/dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida.jpg" alt="Ilustração de mulher utilizando notebook, pensando em CSS">
+      <div class="card__description">
+        <h2 class="card__title">Dark Mode com CSS — mudando a aparência do Blog de maneira simples e rápida</h2>
+        <p class="card__text">por <strong>Thiago Marinho</strong><br> <span>3 min de leitura</span></p>
+        <p class="card__time-reading"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal">
+  <div class="modal__icons">
+    <span class="material-icons modal__min-icon" title="Minimizar">
+      indeterminate_check_box
+    </span>
+    <span class="material-icons modal__max-icon" title="Maximizar">
+      check_box_outline_blank
+    </span>
+    <span class="material-icons modal__close-icon" title="Fechar">
+      close
+    </span>
+  </div>
+  <div class="modal__container">
+    <iframe src="https://blog.rocketseat.com.br/como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/" frameborder="0"></iframe>
+  </div>
+</div>
+
+<script src="/script.js"></script>
+
+{% endblock %}
