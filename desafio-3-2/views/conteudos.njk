@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+
+<title>Rocketseat - Conteúdos</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block content %}    
+
+<div class="container">
+  <h1 class="content__title">Conteúdos</h1>
+  
+  <div class="cards">
+    {% for item in items %}
+      <div class="card" id="{{item.id}}">
+        <img class="card__image"src="{{item.image_url}}" alt="{{item.title}}">
+        <div class="card__description">
+          <h2 class="card__title">{{item.title}}</h2>
+          <p class="card__text">por <strong>{{item.author}}</strong><br> <span>{{item.time}} min de leitura</span></p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+<div class="modal">
+  <div class="modal__icons">
+    <span class="material-icons modal__min-icon" title="Minimizar">
+      indeterminate_check_box
+    </span>
+    <span class="material-icons modal__max-icon" title="Maximizar">
+      check_box_outline_blank
+    </span>
+    <span class="material-icons modal__close-icon" title="Fechar">
+      close
+    </span>
+  </div>
+  <div class="modal__container">
+    <iframe src="https://blog.rocketseat.com.br/como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/" frameborder="0"></iframe>
+  </div>
+</div>
+
+<script src="/script.js"></script>
+
+{% endblock %}
