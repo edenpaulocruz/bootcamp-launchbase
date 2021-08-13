@@ -1,23 +1,26 @@
 module.exports = [
   {
-    id: 'como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal',
-    image_url: 'https://blog.rocketseat.com.br/content/images/2020/11/thumb-como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal.jpg',
-    title: 'Como renomear vários arquivos de uma vez usando o terminal',
-    author: 'Thiago Marinho',
-    time: 2
+    id: 'discover',
+    logo_url: 'https://rocketseat.com.br/_next/image?url=https%3A%2F%2Fmedia.graphcms.com%2FWuUqKZFhRXqgXspGhcB4&w=64&q=100',
+    call: 'Comece a programar do zero',
+    image_url: 'https://rocketseat.com.br/_next/image?url=https%3A%2F%2Fmedia.graphcms.com%2F1dQq4MlT9mpT00oBRCZJ&w=640&q=75',
+    title: 'Programa gratuito para iniciantes',
+    description: 'Na plataforma você terá acesso a mais de 500 aulas gratuitas para você construir os alicerces necessários para decolar em programação.',
   },
   {
-    id: 'ambiente-desenvolvimento-javascript',
-    image_url: 'https://blog.rocketseat.com.br/content/images/2018/12/ambiente-desenvolvimento-javascript.png',
-    title: 'Ambiente Javascript: Dicas, VSCode e terminal',
-    author: 'Diego Fernandes',
-    time: 4
+    id: 'discover',
+    logo_url: 'https://rocketseat.com.br/_next/image?url=https%3A%2F%2Fmedia.graphcms.com%2FWuUqKZFhRXqgXspGhcB4&w=64&q=100',
+    call: 'Comece a programar do zero',
+    image_url: 'https://rocketseat.com.br/_next/image?url=https%3A%2F%2Fmedia.graphcms.com%2F1dQq4MlT9mpT00oBRCZJ&w=640&q=75',
+    title: 'Programa gratuito para iniciantes',
+    description: 'Na plataforma você terá acesso a mais de 500 aulas gratuitas para você construir os alicerces necessários para decolar em programação.',
   },
   {
-    id: 'dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida',
-    image_url: 'https://blog.rocketseat.com.br/content/images/2020/10/dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida.jpg',
-    title: 'Dark Mode com CSS — mudando a aparência do Blog de maneira simples e rápida',
-    author: 'Thiago Marinho',
-    time: 3
+    id: 'discover',
+    logo_url: 'https://rocketseat.com.br/_next/image?url=https%3A%2F%2Fmedia.graphcms.com%2FWuUqKZFhRXqgXspGhcB4&w=64&q=100',
+    call: 'Comece a programar do zero',
+    image_url: 'https://rocketseat.com.br/_next/image?url=https%3A%2F%2Fmedia.graphcms.com%2F1dQq4MlT9mpT00oBRCZJ&w=640&q=75',
+    title: 'Programa gratuito para iniciantes',
+    description: 'Na plataforma você terá acesso a mais de 500 aulas gratuitas para você construir os alicerces necessários para decolar em programação.',
   }
 ]
