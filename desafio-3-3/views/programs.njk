@@ -16,11 +16,7 @@
   
   <div class="cards">
     {% for item in items %}
-      <div class="card" id="{{item.id}}">
-        <div class="card__header">
-          <img class="card__logo" src="{{item.logo_url}}" alt="Logo {{item.id}}">
-          <p class="card__call">{{item.call}}</p>
-        </div>
+      <div class="card" id="{{item.id}}" title="{{item.call}}">
         <img class="card__image"src="{{item.image_url}}" alt="{{item.title}}">
         <div class="card__description">
           <h2 class="card__title">{{item.title}}</h2>
@@ -30,23 +26,6 @@
     {% endfor %}
   </div>
 
-</div>
-
-<div class="modal">
-  <div class="modal__icons">
-    <span class="material-icons modal__min-icon" title="Minimizar">
-      indeterminate_check_box
-    </span>
-    <span class="material-icons modal__max-icon" title="Maximizar">
-      check_box_outline_blank
-    </span>
-    <span class="material-icons modal__close-icon" title="Fechar">
-      close
-    </span>
-  </div>
-  <div class="modal__container">
-    <iframe src="https://blog.rocketseat.com.br/como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/" frameborder="0"></iframe>
-  </div>
 </div>
 
 <script src="/script.js"></script>
