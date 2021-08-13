@@ -29,3 +29,4 @@ Esse repositório visa documentar os desafios realizados durante o bootcamp.
 
 - [Primeiro servidor](desafio-3-1/desafio-3-1.md)
 - [Arquivos nunjucks e dados dinâmicos](desafio-3-2/desafio-3-2.md)
+- [Página de descrição do curso](desafio-3-3/desafio-3-3.md)
