@@ -31,5 +31,3 @@ server.get("/courses/:id", function(req, res) {
 ### Estilização
 
 Você tem liberdade para escolher a estilização que preferir para esse desafio.
-
-#### [Voltar](../README.md)

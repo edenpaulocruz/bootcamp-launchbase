@@ -78,5 +78,3 @@ Imprima em tela o nome e especialidade da primeira tecnologia que o usuário uti
 ```
 O usuário Carlos tem 32 anos e usa a tecnologia C++ com especialidade em Desktop
 ```
-
-#### [Voltar](../README.md)

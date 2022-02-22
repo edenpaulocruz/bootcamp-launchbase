@@ -37,5 +37,3 @@ Nesse desafio você deve criar um servidor que tenha duas rotas que devem retorn
 ### Estilização
 
 Você tem liberdade para escolher a estilização que preferir para esse desafio.
-
-#### [Voltar](../README.md)

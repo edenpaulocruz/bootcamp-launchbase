@@ -13,5 +13,3 @@ Nesse desafio você deve atualizar os arquivos com informações de cursos e des
 ### Estilização
 
 Você tem liberdade para escolher a estilização que preferir para esse desafio.
-
-#### [Voltar](../README.md)

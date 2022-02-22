@@ -79,5 +79,3 @@ if (condicao1) {
   // Condição 1 não passou
 }
 ```
-
-#### [Voltar](../README.md)
