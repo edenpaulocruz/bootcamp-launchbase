@@ -14,19 +14,19 @@ Esse repositório visa documentar os desafios realizados durante o bootcamp.
 
 ### Introdução à Programação WEB
 
-- [Primeiros passos com JS](desafio-1-1/desafio-1-1.md)
-- [Lidando com objetos e vetores](desafio-1-2/desafio-1-2.md)
-- [Funções e estruturas de repetição](desafio-1-3/desafio-1-3.md)
-- [Aplicação: Operações bancárias](desafio-1-4/desafio-1-4.md)
+- [Primeiros passos com JS](desafio-1-1/README.md)
+- [Lidando com objetos e vetores](desafio-1-2/README.md)
+- [Funções e estruturas de repetição](desafio-1-3/README.md)
+- [Aplicação: Operações bancárias](desafio-1-4/README.md)
 
 ### Iniciando no Front-end
 
-- [Primeiro HTML](desafio-2-1/desafio-2-1.md)
-- [Página de descrição](desafio-2-2/desafio-2-2.md)
-- [Página de posts e iframe](desafio-2-3/desafio-2-3.md)
+- [Primeiro HTML](desafio-2-1/README.md)
+- [Página de descrição](desafio-2-2/README.md)
+- [Página de posts e iframe](desafio-2-3/README.md)
 
 ### Iniciando no Back-end
 
-- [Primeiro servidor](desafio-3-1/desafio-3-1.md)
-- [Arquivos nunjucks e dados dinâmicos](desafio-3-2/desafio-3-2.md)
-- [Página de descrição do curso](desafio-3-3/desafio-3-3.md)
+- [Primeiro servidor](desafio-3-1/README.md)
+- [Arquivos nunjucks e dados dinâmicos](desafio-3-2/README.md)
+- [Página de descrição do curso](desafio-3-3/README.md)
