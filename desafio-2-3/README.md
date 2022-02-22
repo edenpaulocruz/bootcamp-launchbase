@@ -37,5 +37,3 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 - Deve ser utilizado o grid para organizar os posts
 
 - O modal nunca deve abrir maximizado
-
-#### [Voltar](../README.md)

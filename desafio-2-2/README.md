@@ -33,5 +33,3 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 - O nome da empresa e a imagem devem ser destacar do restante
 
 - Os links das redes sociais devem ter alguma alteração visual quando o cursor do mouse passar por cima
-
-#### [Voltar](../README.md)

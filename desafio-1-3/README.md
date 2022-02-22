@@ -109,5 +109,3 @@ No fim exiba todos usuários em telas, seu respectivo saldo e SE o saldo é POSI
 Fulano possui saldo POSITIVO de 43.3
 Sicrano possui saldo NEGATIVO de -90.3
 ```
-
-#### [Voltar](../README.md)
