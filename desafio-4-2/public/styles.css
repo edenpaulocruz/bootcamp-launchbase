@@ -1,8 +1,9 @@
 /* === BASE === */
 :root {
   --black-color: #282a36;
-  --secondary-color: #50fa7b;
+  --gray-color: #777;
   --primary-color: #7159c1;
+  --secondary-color: #50fa7b;
   --white-color: #fff;
 }
 
@@ -23,13 +24,12 @@ html {
 /* === LAYOUT === */
 
 .body {
-  background: var(--primary-color);
-  color: var(--white-color);
+  background: var(--white-color);
 }
 
 .header {
-  background: var(--white-color);
-  color: var(--black-color);
+  background: var(--black-color);
+  color: var(--white-color);
   padding: 2rem;
   text-align: center;
   width: 100%;
@@ -58,14 +58,96 @@ html {
 .nav__link::after {
   content: "";
   width: 0;
-  height: 2px;
+  height: .125rem;
   background-color: var(--primary-color);
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: -.25rem;
 }
 
 .nav__link:hover::after {
   width: 100%;
   transition: width 500ms ease-in-out;
+}
+
+/* ===== CARD ===== */
+.card {
+  background-color: var(--black-color);
+  min-height: 25rem;
+  margin: 3rem auto;
+  width: 50rem;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  box-shadow: -6px 6px 10px 0px rgba(113, 89, 193, .6);
+
+  opacity: 0;
+  animation-name: up;
+  animation-delay: 1s;
+  animation-duration: 700ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===== CARD DETAILS ===== */
+.details {
+  padding: 2rem;
+}
+
+.details .item {
+  border-top: 1px solid var(--gray-color);
+  margin-top: .75rem;
+  padding-top: .75rem;
+}
+
+.details .item:first-of-type {
+  border: none;
+  padding-top: 0;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+  color: var(--primary-color);
+  font-size: .875rem;
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.details .item div:nth-child(2) {
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.details h3 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+}
+
+.details .item span {
+  background-color: var(--gray-color);
+  border-radius: 1rem;
+  color: var(--white-color);
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: bold;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+}
+
+span + span {
+  margin-left: .5rem;
 }
