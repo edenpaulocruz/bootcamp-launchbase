@@ -30,3 +30,12 @@ Esse repositório visa documentar os desafios realizados durante o bootcamp.
 - [Primeiro servidor](./desafio-3-1)
 - [Arquivos nunjucks e dados dinâmicos](./desafio-3-2)
 - [Página de descrição do curso](./desafio-3-3)
+
+### Site de Aulas Particulares
+
+- [Header](./desafio-4-1/)
+- [Card do Prodessor](./desafio-4-2/)
+
+## Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
