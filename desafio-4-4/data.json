@@ -1,0 +1,20 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "https://pbs.twimg.com/profile_images/1415288716415877121/zK7lC5Ns_400x400.jpg",
+      "name": "Fernando Daciuk",
+      "birth": "1996-02-01",
+      "graduation": "2",
+      "class-type": "R",
+      "services": "JavaScript, React"
+    },
+    {
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-rLkttGlkGYFf05b8vMAOMKZQoqi5aYoiig&usqp=CAU",
+      "name": "Mayk Brito",
+      "birth": "1995-10-05",
+      "graduation": "3",
+      "class-type": "R",
+      "services": "HTML, CSS, JavaScript"
+    }
+  ]
+}
