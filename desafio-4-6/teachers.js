@@ -2,21 +2,22 @@ const fs = require('fs')
 const data = require('./data.json')
 const { age, date, grad, mode } = require('./utils')
 
-exports.index = function(req, res) {
-  const teachers = data.teachers
-
-  for (teacher in teachers) {
-    console.log(teacher[0])
-  }
+exports.index = (req, res) => {
+  const teachers = data.teachers.map(teacher => {
+    return teacher = {
+      ...teacher,
+      services: teacher.services.split(',')
+    }
+  })
 
   return res.render('teachers/index', { teachers })
 }
 
-exports.new = function(req, res) {
+exports.new = (req, res) => {
   return res.render('teachers/new')
 }
 
-exports.post = function(req, res) {
+exports.post = (req, res) => {
   const keys = Object.keys(req.body)
 
   for (key of keys) {
@@ -44,7 +45,7 @@ exports.post = function(req, res) {
   return res.redirect(`teachers/${id}`)
 }
 
-exports.show = function(req, res) {
+exports.show = (req, res) => {
   const { id } = req.params
   const foundTeacher = data.teachers.find(function(teacher) {
     return id == teacher.id
@@ -64,7 +65,7 @@ exports.show = function(req, res) {
   return res.render('teachers/show', { teacher })
 }
 
-exports.edit = function(req, res) {
+exports.edit = (req, res) => {
   const { id } = req.params
   const foundTeacher = data.teachers.find(function(teacher) {
     return id == teacher.id
@@ -80,7 +81,7 @@ exports.edit = function(req, res) {
   return res.render('teachers/edit', { teacher })
 }
 
-exports.update = function(req, res) {
+exports.update = (req, res) => {
   const { id } = req.body
   let index = 0
 
@@ -109,7 +110,7 @@ exports.update = function(req, res) {
   })
 }
 
-exports.delete = function(req, res) {
+exports.delete = (req, res) => {
   const { id } = req.body
 
   data.teachers = data.teachers.filter(function(teacher) {

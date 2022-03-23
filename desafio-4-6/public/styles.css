@@ -261,7 +261,7 @@ button[type="submit"], .button {
 
 .table-container td a {
   border: 1px solid var(--white-color);
-  border-radius: .25rem;
+  border-radius: 1rem;
   color: var(--white-color);
   display: inline-block;
   font-weight: bold;
@@ -272,21 +272,31 @@ button[type="submit"], .button {
 
 .table-container > a {
   background-color: var(--primary-color);
-  border-radius: 50%;
+  border-radius: 1rem;
   color: var(--white-color);
   display: inline-block;
-  font-size: 1.5rem;
-  height: 2rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
-  width: 2rem;
+  padding: .5rem 2rem;
 }
 
 .table-container > a:hover {
-  border-color: var(--white-color);
+  color: var(--secondary-color);
 }
 
 .table-container td a:hover {
   background-color: var(--white-color);
   color: var(--black-color);
+}
+
+.table-container td span {
+  background-color: var(--gray-color);
+  border-radius: 1rem;
+  color: var(--white-color);
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: bold;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
 }
