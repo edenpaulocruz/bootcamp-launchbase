@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
-const { age, grad, mode } = require('./utils')
+const { age, date, grad, mode } = require('./utils')
 
 exports.index = function(req, res) {
   return res.render('teachers/index')
@@ -56,4 +56,49 @@ exports.show = function(req, res) {
   }
 
   return res.render('teachers/show', { teacher })
+}
+
+exports.edit = function(req, res) {
+  const { id } = req.params
+  const foundTeacher = data.teachers.find(function(teacher) {
+    return id == teacher.id
+  })
+
+  if (!foundTeacher) return res.send('Professor(a) não encontrado(a)')
+
+  const teacher = {
+    ...foundTeacher,
+    birth: date(foundTeacher.birth).iso
+  }
+
+  return res.render('teachers/edit', { teacher })
+}
+
+exports.update = function(req, res) {
+  const { id } = req.body
+  let index = 0
+
+  const foundTeacher = data.teachers.find(function(teacher, foundIndex) {
+    if (id == teacher.id) {
+      index = foundIndex
+      return true
+    }
+  })
+
+  if (!foundTeacher) return res.send('Professor(a) não encontrado(a)')
+
+  const teacher = {
+    ...foundTeacher,
+    ...req.body,
+    birth: Date.parse(req.body.birth),
+    id: Number(req.body.id)
+  }
+
+  data.teachers[index] = teacher
+
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+    if (err) return res.send('Erro ao gravar arquivo')
+
+    return res.redirect(`teachers/${id}`)
+  })
 }
