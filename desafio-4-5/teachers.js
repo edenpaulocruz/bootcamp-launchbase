@@ -102,3 +102,17 @@ exports.update = function(req, res) {
     return res.redirect(`teachers/${id}`)
   })
 }
+
+exports.delete = function(req, res) {
+  const { id } = req.body
+
+  data.teachers = data.teachers.filter(function(teacher) {
+    return teacher.id != id
+  })
+
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+    if (err) return res.send('Erro ao gravar arquivo')
+
+    return res.redirect(`teachers/`)
+  })
+}

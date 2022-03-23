@@ -40,7 +40,7 @@
       </div>
       <div class="item details__buttons">
         <a href="/teachers/{{teacher.id}}/edit" class="button"> Editar</a>
-        <form method="POST" action="/teachers?_method=DELETE" class="delete">
+        <form method="POST" action="/teachers?_method=DELETE" class="delete" data-js="form-delete">
           <input type="hidden" name="id" value="{{teacher.id}}">
           <button type="submit">Deletar</button>
         </form>
