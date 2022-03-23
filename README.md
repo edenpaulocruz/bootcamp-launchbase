@@ -35,6 +35,10 @@ Esse repositório visa documentar os desafios realizados durante o bootcamp.
 
 - [Header](./desafio-4-1/)
 - [Card do Prodessor](./desafio-4-2/)
+- [Formulário e Rota de cadastro do Professor](./desafio-4-3/)
+- [Apresentação, edição e formatação dos dados de um professor](./desafio-4-4/)
+- [HTTP: PUT e DELETE](./desafio-4-5/)
+- [Listagem de professores](./desafio-4-6/)
 
 ## Licença
 
