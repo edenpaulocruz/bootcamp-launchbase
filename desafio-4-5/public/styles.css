@@ -1,5 +1,6 @@
 /* === BASE === */
 :root {
+  --alert-color: #da4040;
   --black-color: #282a36;
   --gray-color: #777;
   --primary-color: #7159c1;
@@ -156,6 +157,17 @@ span + span {
   margin-left: .5rem;
 }
 
+.details__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.button {
+  display: block;
+  text-align: center;
+  width: calc(50% - 1rem);
+}
+
 /* ===== FORM ===== */
 input, select {
   border-radius: .25rem;
@@ -178,7 +190,7 @@ input::placeholder {
   font-weight: normal;
 }
 
-button[type="submit"] {
+button[type="submit"], .button {
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
   border-radius: .25rem;
@@ -188,4 +200,13 @@ button[type="submit"] {
   margin-top: 1.5rem;
   padding: .5rem;
   width: 100%;
+}
+
+.delete {
+  width: calc(50% - 1rem);
+}
+
+.delete button[type="submit"] {
+  background-color: var(--alert-color);
+  border: 2px solid var(--alert-color);
 }
