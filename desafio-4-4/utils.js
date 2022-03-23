@@ -26,7 +26,7 @@ module.exports = {
   mode: code => {
     const mode = {
       P: 'Presencial',
-      R: 'Remoto'
+      R: 'A distância'
     }
 
     return mode[code]
