@@ -6,15 +6,10 @@ routes.get('/', function(req, res) {
   return res.redirect('/teachers')
 })
 
-routes.get('/teachers', function(req, res) {
-  return res.render('teachers/index')
-})
-
-routes.get('/teachers/new', function(req, res) {
-  return res.render('teachers/new')
-})
-
+routes.get('/teachers', teachers.index)
+routes.get('/teachers/new', teachers.new)
 routes.post('/teachers', teachers.post)
+routes.get('/teachers/:id', teachers.show)
 
 routes.get('/students', function(req, res) {
   return res.render('students/index')
