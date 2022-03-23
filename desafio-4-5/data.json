@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6643122?v=4",
+      "name": "Mayk Brito",
+      "birth": 662688000000,
+      "graduation": "3",
+      "class": "R",
+      "services": "HTML, CSS, JavaScript",
+      "created_at": 1648059727826
+    }
+  ]
+}
