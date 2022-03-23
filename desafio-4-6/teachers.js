@@ -3,7 +3,13 @@ const data = require('./data.json')
 const { age, date, grad, mode } = require('./utils')
 
 exports.index = function(req, res) {
-  return res.render('teachers/index')
+  const teachers = data.teachers
+
+  for (teacher in teachers) {
+    console.log(teacher[0])
+  }
+
+  return res.render('teachers/index', { teachers })
 }
 
 exports.new = function(req, res) {
