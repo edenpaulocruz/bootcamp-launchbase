@@ -1,5 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
+const { age, grad, mode } = require('./utils')
 
 exports.index = function(req, res) {
   return res.render('teachers/index')
@@ -17,13 +18,17 @@ exports.post = function(req, res) {
       return res.send('Todos os campos são obrigatórios')
   }
 
+  birth = Date.parse(req.body.birth)
+  const created_at = Date.now()
   let id = 1
   const lastTeacher = data.teachers[data.teachers.length - 1]
   if (lastTeacher) id = lastTeacher.id + 1
 
   data.teachers.push({
     id,
-    ...req.body
+    ...req.body,
+    birth,
+    created_at
   })
 
   fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
@@ -43,7 +48,11 @@ exports.show = function(req, res) {
 
   const teacher = {
     ...foundTeacher,
-    services: foundTeacher.services.split(',')
+    birth: age(foundTeacher.birth),
+    graduation: grad(foundTeacher.graduation),
+    class: mode(foundTeacher.class),
+    services: foundTeacher.services.split(','),
+    created_at: new Date(foundTeacher.created_at).toLocaleDateString()
   }
 
   return res.render('teachers/show', { teacher })

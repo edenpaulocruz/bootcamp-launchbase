@@ -2,30 +2,23 @@
   "teachers": [
     {
       "id": 1,
-      "avatar_url": "https://avatars.githubusercontent.com/u/6643122?v=4",
-      "name": "Mayk Brito",
-      "birth": "1996-02-01",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17316392?v=4",
+      "name": "Jakeliny Gracielly",
+      "birth": 889056000000,
       "graduation": "3",
       "class": "R",
-      "services": "HTML, CSS, JavaScript"
+      "services": "Node.js",
+      "created_at": 1648008953836
     },
     {
       "id": 2,
-      "avatar_url": "https://avatars.githubusercontent.com/u/6643122?v=4",
-      "name": "Mayk Brito",
-      "birth": "1996-02-01",
-      "graduation": "3",
-      "class": "R",
-      "services": "HTML, CSS, JavaScript"
-    },
-    {
-      "id": 3,
       "avatar_url": "https://media.graphcms.com/En4exJXRQhWvLQNdCTyp",
       "name": "Diego Fernandes",
-      "birth": "1997-02-05",
+      "birth": 811123200000,
       "graduation": "3",
       "class": "R",
-      "services": "React"
+      "services": "React, React Native",
+      "created_at": 1648009062413
     }
   ]
 }
