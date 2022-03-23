@@ -185,7 +185,7 @@ button[type="submit"] {
   color: var(--white-color);
   cursor: pointer;
   font-size: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   padding: .5rem;
   width: 100%;
 }
